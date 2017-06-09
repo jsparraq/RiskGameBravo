@@ -162,6 +162,13 @@ public class MainManager {
         } catch (IOException e) {
            // do something
         }
+        try{
+            PrintWriter writer = new PrintWriter("StateSessionServer.json", "UTF-8");
+            writer.println(json2);
+            writer.close();
+        } catch (IOException e) {
+           // do something
+        }
         
     }
 }
